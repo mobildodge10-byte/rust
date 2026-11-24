@@ -1,0 +1,915 @@
+{
+  "version": 1,
+  "title": "Mini Terra logistics coordinate layout",
+  "bounds": {
+    "x_min": 0,
+    "x_max": 1000,
+    "y_min": 0,
+    "y_max": 800
+  },
+  "safe_margin": 50,
+  "units": "simulation map units",
+  "axes": {
+    "origin": "southwest",
+    "x_positive": "east",
+    "y_positive": "north"
+  },
+  "random_seed": 20261102,
+  "notes": [
+    "An intentionally simplified schematic inspired by Terra's regional geography, not canonical borders, city coordinates, distances, or a navigable world map.",
+    "All seeded locations stay at least 50 units from every outer edge.",
+    "Durin is represented by a subsurface logistics anchor within the schematic Sargon area; it is not an assertion of the entire underground country's borders.",
+    "Tara is a subregion of Victoria; its simulated footprint is excluded from other Victoria placements.",
+    "Operator locations represent a randomized initial deployment, not canonical current whereabouts.",
+    "Operators without a single regional specialty use suitable land logistics hubs; generic deployments exclude underwater Aegir and underground Durin.",
+    "Initial availability is TRUE for every operator."
+  ],
+  "sources": [
+    "https://arknights.wiki.gg/wiki/Geography",
+    "https://arknights.wiki.gg/wiki/Terra",
+    "https://arknights-matome.blog.jp/archives/34548371.html"
+  ],
+  "regions": [
+    {
+      "kind": "underwater",
+      "id": 1,
+      "name": "Aegir",
+      "label": [
+        775,
+        135
+      ],
+      "polygon": [
+        [
+          620,
+          55
+        ],
+        [
+          680,
+          120
+        ],
+        [
+          775,
+          150
+        ],
+        [
+          865,
+          100
+        ],
+        [
+          890,
+          50
+        ],
+        [
+          820,
+          35
+        ],
+        [
+          700,
+          35
+        ]
+      ]
+    },
+    {
+      "kind": "land",
+      "id": 2,
+      "name": "Bolivar",
+      "label": [
+        112,
+        505
+      ],
+      "polygon": [
+        [
+          70,
+          390
+        ],
+        [
+          75,
+          505
+        ],
+        [
+          155,
+          550
+        ],
+        [
+          150,
+          435
+        ],
+        [
+          210,
+          405
+        ],
+        [
+          185,
+          360
+        ],
+        [
+          110,
+          345
+        ]
+      ]
+    },
+    {
+      "kind": "land",
+      "id": 3,
+      "name": "Columbia",
+      "label": [
+        240,
+        570
+      ],
+      "polygon": [
+        [
+          150,
+          435
+        ],
+        [
+          155,
+          550
+        ],
+        [
+          230,
+          585
+        ],
+        [
+          340,
+          560
+        ],
+        [
+          350,
+          510
+        ],
+        [
+          315,
+          455
+        ],
+        [
+          240,
+          410
+        ]
+      ]
+    },
+    {
+      "kind": "underground",
+      "id": 4,
+      "name": "Durin",
+      "parent_region_id": 15,
+      "label": [
+        220,
+        320
+      ],
+      "polygon": [
+        [
+          185,
+          255
+        ],
+        [
+          185,
+          300
+        ],
+        [
+          220,
+          325
+        ],
+        [
+          255,
+          305
+        ],
+        [
+          255,
+          260
+        ],
+        [
+          220,
+          245
+        ]
+      ]
+    },
+    {
+      "kind": "land",
+      "id": 5,
+      "name": "Higashi",
+      "label": [
+        875,
+        645
+      ],
+      "polygon": [
+        [
+          815,
+          580
+        ],
+        [
+          840,
+          640
+        ],
+        [
+          900,
+          660
+        ],
+        [
+          935,
+          615
+        ],
+        [
+          925,
+          545
+        ],
+        [
+          875,
+          525
+        ]
+      ]
+    },
+    {
+      "kind": "land",
+      "id": 6,
+      "name": "Iberia",
+      "label": [
+        570,
+        195
+      ],
+      "polygon": [
+        [
+          465,
+          125
+        ],
+        [
+          450,
+          200
+        ],
+        [
+          490,
+          265
+        ],
+        [
+          520,
+          255
+        ],
+        [
+          565,
+          225
+        ],
+        [
+          625,
+          240
+        ],
+        [
+          665,
+          200
+        ],
+        [
+          640,
+          120
+        ],
+        [
+          565,
+          85
+        ],
+        [
+          500,
+          95
+        ]
+      ]
+    },
+    {
+      "kind": "land",
+      "id": 7,
+      "name": "Kazdel",
+      "label": [
+        720,
+        535
+      ],
+      "polygon": [
+        [
+          650,
+          490
+        ],
+        [
+          665,
+          550
+        ],
+        [
+          740,
+          555
+        ],
+        [
+          785,
+          535
+        ],
+        [
+          790,
+          450
+        ],
+        [
+          755,
+          390
+        ],
+        [
+          690,
+          400
+        ],
+        [
+          610,
+          430
+        ]
+      ]
+    },
+    {
+      "kind": "land",
+      "id": 8,
+      "name": "Kazimierz",
+      "label": [
+        410,
+        610
+      ],
+      "polygon": [
+        [
+          350,
+          510
+        ],
+        [
+          350,
+          595
+        ],
+        [
+          430,
+          625
+        ],
+        [
+          490,
+          575
+        ],
+        [
+          480,
+          510
+        ],
+        [
+          420,
+          480
+        ]
+      ]
+    },
+    {
+      "kind": "land",
+      "id": 9,
+      "name": "Kjerag",
+      "label": [
+        355,
+        488
+      ],
+      "polygon": [
+        [
+          310,
+          400
+        ],
+        [
+          315,
+          455
+        ],
+        [
+          350,
+          510
+        ],
+        [
+          420,
+          480
+        ],
+        [
+          410,
+          425
+        ],
+        [
+          370,
+          390
+        ]
+      ]
+    },
+    {
+      "kind": "land",
+      "id": 10,
+      "name": "Laterano",
+      "label": [
+        588,
+        315
+      ],
+      "polygon": [
+        [
+          520,
+          255
+        ],
+        [
+          540,
+          340
+        ],
+        [
+          585,
+          320
+        ],
+        [
+          640,
+          335
+        ],
+        [
+          660,
+          290
+        ],
+        [
+          625,
+          240
+        ],
+        [
+          565,
+          225
+        ]
+      ]
+    },
+    {
+      "kind": "land",
+      "id": 11,
+      "name": "Leithanien",
+      "label": [
+        580,
+        535
+      ],
+      "polygon": [
+        [
+          500,
+          500
+        ],
+        [
+          545,
+          555
+        ],
+        [
+          610,
+          545
+        ],
+        [
+          650,
+          490
+        ],
+        [
+          610,
+          430
+        ],
+        [
+          545,
+          450
+        ]
+      ]
+    },
+    {
+      "kind": "land",
+      "id": 12,
+      "name": "Minos",
+      "label": [
+        325,
+        378
+      ],
+      "polygon": [
+        [
+          265,
+          280
+        ],
+        [
+          270,
+          345
+        ],
+        [
+          310,
+          400
+        ],
+        [
+          370,
+          390
+        ],
+        [
+          380,
+          320
+        ],
+        [
+          340,
+          270
+        ]
+      ]
+    },
+    {
+      "kind": "land",
+      "id": 13,
+      "name": "Rim Billiton",
+      "label": [
+        715,
+        378
+      ],
+      "polygon": [
+        [
+          665,
+          255
+        ],
+        [
+          660,
+          290
+        ],
+        [
+          640,
+          335
+        ],
+        [
+          665,
+          390
+        ],
+        [
+          690,
+          400
+        ],
+        [
+          755,
+          390
+        ],
+        [
+          785,
+          320
+        ],
+        [
+          755,
+          250
+        ],
+        [
+          700,
+          225
+        ]
+      ]
+    },
+    {
+      "kind": "land",
+      "id": 14,
+      "name": "Sami",
+      "label": [
+        375,
+        717
+      ],
+      "polygon": [
+        [
+          300,
+          640
+        ],
+        [
+          310,
+          710
+        ],
+        [
+          410,
+          730
+        ],
+        [
+          465,
+          690
+        ],
+        [
+          450,
+          620
+        ],
+        [
+          370,
+          600
+        ]
+      ]
+    },
+    {
+      "kind": "land",
+      "id": 15,
+      "name": "Sargon",
+      "label": [
+        245,
+        125
+      ],
+      "polygon": [
+        [
+          80,
+          140
+        ],
+        [
+          80,
+          280
+        ],
+        [
+          110,
+          345
+        ],
+        [
+          185,
+          360
+        ],
+        [
+          210,
+          405
+        ],
+        [
+          240,
+          410
+        ],
+        [
+          315,
+          455
+        ],
+        [
+          310,
+          400
+        ],
+        [
+          270,
+          345
+        ],
+        [
+          265,
+          280
+        ],
+        [
+          340,
+          270
+        ],
+        [
+          360,
+          235
+        ],
+        [
+          390,
+          215
+        ],
+        [
+          430,
+          195
+        ],
+        [
+          450,
+          200
+        ],
+        [
+          465,
+          125
+        ],
+        [
+          390,
+          90
+        ],
+        [
+          260,
+          70
+        ],
+        [
+          140,
+          90
+        ]
+      ]
+    },
+    {
+      "kind": "land",
+      "id": 16,
+      "name": "Siesta",
+      "label": [
+        400,
+        280
+      ],
+      "polygon": [
+        [
+          360,
+          235
+        ],
+        [
+          380,
+          270
+        ],
+        [
+          420,
+          270
+        ],
+        [
+          440,
+          245
+        ],
+        [
+          425,
+          220
+        ],
+        [
+          390,
+          215
+        ]
+      ]
+    },
+    {
+      "kind": "land",
+      "id": 17,
+      "name": "Siracusa",
+      "label": [
+        598,
+        416
+      ],
+      "polygon": [
+        [
+          525,
+          390
+        ],
+        [
+          545,
+          450
+        ],
+        [
+          610,
+          430
+        ],
+        [
+          665,
+          390
+        ],
+        [
+          640,
+          335
+        ],
+        [
+          585,
+          320
+        ],
+        [
+          540,
+          340
+        ]
+      ]
+    },
+    {
+      "kind": "land",
+      "id": 18,
+      "name": "Ursus",
+      "label": [
+        620,
+        705
+      ],
+      "polygon": [
+        [
+          440,
+          620
+        ],
+        [
+          465,
+          690
+        ],
+        [
+          610,
+          720
+        ],
+        [
+          760,
+          700
+        ],
+        [
+          830,
+          640
+        ],
+        [
+          800,
+          570
+        ],
+        [
+          690,
+          550
+        ],
+        [
+          580,
+          590
+        ],
+        [
+          500,
+          570
+        ]
+      ]
+    },
+    {
+      "kind": "land",
+      "id": 19,
+      "name": "Victoria",
+      "label": [
+        475,
+        480
+      ],
+      "polygon": [
+        [
+          380,
+          320
+        ],
+        [
+          400,
+          390
+        ],
+        [
+          410,
+          425
+        ],
+        [
+          420,
+          480
+        ],
+        [
+          500,
+          500
+        ],
+        [
+          545,
+          450
+        ],
+        [
+          525,
+          390
+        ],
+        [
+          470,
+          345
+        ],
+        [
+          440,
+          300
+        ]
+      ]
+    },
+    {
+      "kind": "land",
+      "id": 20,
+      "name": "Yan",
+      "label": [
+        875,
+        550
+      ],
+      "polygon": [
+        [
+          755,
+          390
+        ],
+        [
+          790,
+          450
+        ],
+        [
+          785,
+          535
+        ],
+        [
+          825,
+          580
+        ],
+        [
+          875,
+          525
+        ],
+        [
+          925,
+          545
+        ],
+        [
+          935,
+          400
+        ],
+        [
+          890,
+          330
+        ],
+        [
+          810,
+          340
+        ]
+      ]
+    },
+    {
+      "kind": "subregion",
+      "id": 21,
+      "name": "Tara",
+      "parent_region_id": 19,
+      "label": [
+        422,
+        398
+      ],
+      "polygon": [
+        [
+          397,
+          350
+        ],
+        [
+          407,
+          385
+        ],
+        [
+          435,
+          385
+        ],
+        [
+          450,
+          360
+        ],
+        [
+          430,
+          340
+        ],
+        [
+          412,
+          335
+        ]
+      ]
+    }
+  ]
+}

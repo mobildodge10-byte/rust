@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-labelledby="t">
+<title id="t">Warehouse</title>
+<polygon points="32.00,4.00 56.25,18.00 56.25,46.00 32.00,60.00 7.75,46.00 7.75,18.00" fill="#101315" fill-opacity="0.94" stroke="#e6ebee" stroke-width="2" stroke-linejoin="miter"/>
+<polygon points="32.00,8.50 52.35,20.25 52.35,43.75 32.00,55.50 11.65,43.75 11.65,20.25" fill="none" stroke="#3fd6e8" stroke-width="1" stroke-opacity="0.55" stroke-dasharray="3 3"/>
+<path d="M32 1 V6 M32 63 V58" stroke="#3fd6e8" stroke-width="2.5"/>
+<path d="M2.5 16.5 l4 2.3 M61.5 47.5 l-4 -2.3" stroke="#3fd6e8" stroke-width="2.5"/>
+<path d="M15 29 L32 18.5 L49 29" fill="none" stroke="#e6ebee" stroke-width="3" stroke-linejoin="miter"/>
+<path d="M19.5 28 V47 H44.5 V28" fill="none" stroke="#e6ebee" stroke-width="2.5" stroke-linejoin="miter"/>
+<rect x="24.5" y="33" width="15" height="2.6" fill="#e6ebee"/>
+<rect x="24.5" y="38" width="15" height="2.6" fill="#e6ebee" fill-opacity="0.8"/>
+<rect x="24.5" y="43" width="15" height="2.6" fill="#e6ebee" fill-opacity="0.6"/>
+<path d="M32 10.5 l2.6 2.6 -2.6 2.6 -2.6 -2.6 z" fill="#3fd6e8"/>
+<path d="M18 50.5 H46" stroke="#3fd6e8" stroke-width="2"/>
+</svg>

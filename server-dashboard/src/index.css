@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+/* Arknights Endfield palette */
+@theme {
+    --color-ash: #7e807c;
+    --color-moss: #657136;
+    --color-signal: #f8f546;
+    --color-steel: #a0aaa9;
+    --color-slate: #313739;
+    --font-sans: "Bahnschrift", "Segoe UI", system-ui, sans-serif;
+    --font-mono: "Cascadia Mono", "Consolas", ui-monospace, monospace;
+}
+
+/* Potongan sudut (geometri khas Arknights) */
+@utility cut-br {
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 14px), calc(100% - 14px) 100%, 0 100%);
+}
+@utility cut-tr {
+    clip-path: polygon(0 0, calc(100% - 14px) 0, 100% 14px, 100% 100%, 0 100%);
+}
+@utility cut-sm {
+    clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px));
+}
+
+@utility hazard {
+    background: repeating-linear-gradient(-45deg, var(--color-signal) 0 6px, var(--color-slate) 6px 12px);
+}
+
+@utility grid-field {
+    background-color: var(--color-steel);
+    background-image:
+        linear-gradient(color-mix(in srgb, var(--color-ash) 35%, transparent) 1px, transparent 1px),
+        linear-gradient(90deg, color-mix(in srgb, var(--color-ash) 35%, transparent) 1px, transparent 1px);
+    background-size: 32px 32px;
+}
+
+@layer base {
+    html,
+    body,
+    #root {
+        height: 100%;
+    }
+    body {
+        @apply bg-slate font-sans text-slate antialiased select-none;
+    }
+    ::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: var(--color-ash);
+    }
+}
